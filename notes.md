@@ -69,3 +69,23 @@ second call: 223
 
 
 --------------------------------------------------------------
+// Handling Errors( Timeout, Rate Limit), Pydantic
+
+# Handling Errors
+1. Добавили асинхронность 60sec
+2. Повторяем 3 раза если ошибка
+3. Пауза с нарастанием.
+4. try, except
+5. Результат. При успехе функция возвращает ответ. При исчерпании попыток печатает All attempts failed! и возвращает None.
+
+# Pydantic
+1. BaseModel
+2. Field
+3. Nested models
+4. field, model validators
+5. methods, model_dump, model_dump_json
+
+# Calling with Pydantic
+- new parameter: response_format={type,mime_type,schema}
+
+--------------------------------------------------------------
